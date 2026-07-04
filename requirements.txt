@@ -1,0 +1,12 @@
+langchain
+langchain-groq
+langchain-community
+faiss-cpu
+sentence-transformers
+fastapi
+uvicorn
+streamlit
+requests
+python-dotenv
+pandas
+numpy

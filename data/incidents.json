@@ -1,0 +1,27 @@
+[
+  {
+    "description": "Disk I/O spiked above 800 MB/s on a database server during nightly backup.",
+    "root_cause": "Backup job overlapping with peak query load, saturating disk bandwidth.",
+    "fix": "Rescheduled backup window and throttled backup I/O priority."
+  },
+  {
+    "description": "CPU usage sustained above 90% for 20 minutes on an application server.",
+    "root_cause": "A runaway process stuck in an infinite retry loop after a downstream API timeout.",
+    "fix": "Restarted the affected service and added exponential backoff to the retry logic."
+  },
+  {
+    "description": "Memory usage climbed steadily over 6 hours until the service crashed.",
+    "root_cause": "Memory leak in a caching layer that never evicted stale entries.",
+    "fix": "Restarted the service and patched the cache eviction policy."
+  },
+  {
+    "description": "Server temperature exceeded safe thresholds during a heatwave.",
+    "root_cause": "Cooling fan failure combined with high ambient data center temperature.",
+    "fix": "Replaced the fan unit and temporarily throttled non-critical workloads."
+  },
+  {
+    "description": "Vulnerability scan flagged an outdated OpenSSL version on multiple servers.",
+    "root_cause": "Servers were not included in the last automated patch cycle.",
+    "fix": "Applied the vendor patch and added the servers to the automated patch group."
+  }
+]
